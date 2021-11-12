@@ -3,3 +3,19 @@ body{
     color:white;
     font-family: "Droid Sans";
 }
+a{
+    color: dodgerblue;
+    transition: 0.25s;
+}
+a:visited{
+    color:mediumorchid;
+}
+a:hover{
+    color:white;
+}
+li{
+    transition: 0.1s;
+}
+li:hover{
+    margin-left: 20px;
+}
