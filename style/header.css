@@ -1,0 +1,165 @@
+a.page-nav:link {
+    transition:0s;
+    text-align:center;
+    color:white;
+    font-size:30px;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.page-nav{
+    color:white;
+    transition: 0.3s;
+}
+a.page-nav:visited {
+    text-align:center;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.page-nav:hover div{
+    color:white;
+    text-decoration: none;
+}
+a.page-nav:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.page-nav div{
+    transition:0.3s;
+}
+/*content div highlight color*/
+a.page-nav:hover div#c{
+    background-color:#55555555;
+}
+/*base state for page selector hover effect*/
+div.overlay-element div#r{
+    transition:0.3s;
+    width:0px;
+    height:100%;
+}
+/*darken the page and prevent interaction with it*/
+.overlay{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    transition:0.3s;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: default;
+}
+/*the actual page selector*/
+.overlay-element{
+    width:80%;
+    height:100%;
+    right:10%;
+    left:10%;
+    padding:10px;
+    background-color:rgba(1.15,0.15,0.25,0.75);
+    position: fixed;
+    z-index: 2;
+    /*left:var(--overlay-shift);*/
+    transition:0.3s;
+}
+
+
+div#c{
+    height: fit-content;
+    padding: 0px;
+}
+div#r{
+    height:inherit;
+    height:100%;
+}
+/*expands side boxes when tab is hovered*/
+div#c:hover > div#r{
+    width:15px;
+}
+/*main navbar container*/
+div.nav-menu{
+    font-family:"ui-rounded";
+    display: flex;
+    height:30px;
+    width:100%;
+    transition:0.5s;
+    background-color:#323232;
+    align-items:center;
+    overflow:hidden;
+
+}
+/*the container of a block in the bar*/
+.nav-container{
+    width:100%;
+    height:30px;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    transition:0.5s;
+}
+.nav-container:hover{
+    width:120%;
+    color:black;
+}
+.nav-container:link{
+
+    text-decoration:none;
+}
+
+.nav-container div.nav-content{
+    padding-right:0px;
+    padding-left:0px;
+    background-color:#252525;
+    width:100%;
+    height:25px;
+    transition:0.5s;
+    color:white;
+    text-align:center;
+    line-height:25px;
+}
+.nav-container div.nav-b{
+    transition:0.5s;
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 25px 25px;
+    border-color: transparent transparent #252525 transparent;
+}
+.nav-container:hover div.nav-b{
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent white transparent;
+}
+.nav-container div.nav-a{
+    transition:0.5s;
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 0;
+    border-color: #252525 transparent transparent transparent;
+}
+.nav-container:hover div.nav-a{
+    border-width: 30px 30px 0 0;
+    border-color: white transparent transparent transparent;
+}
+.nav-container:hover div.nav-content{
+    height:30px;
+    color:black;
+    background-color:white;
+    line-height:30px;
+}
+
+button.expand{
+    height:auto;
+    width:auto;
+    background-color:black;
+}
