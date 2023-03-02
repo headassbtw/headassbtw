@@ -10,5 +10,5 @@ Fuck python.
 Some of my better works:
 - An orthographic [3D tetris](https://headassbtw.itch.io/feztris) [C++]
 - A Beat Saber mod that lets you [change the bloom settings](https://github.com/headassbtw/ReProcessor) [C#]
-- A converter from Source Filmmaker's model format to Titanfall 2's model format [here](https://github.com/headassbtw/mdlshit) [C++]
+- A [converter](https://github.com/headassbtw/mdlshit) from Source Filmmaker's model format to Titanfall 2's model format [C++]
 - A Beat Saber mod that [rotates the playspace](https://github.com/TeamFeVR/bSpin) to create a moving camera effect  [C#]
