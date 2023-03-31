@@ -25,7 +25,6 @@ for(let i = 0; i < files.length; i++){
   console.log(window.location.pathname);
   console.log(files[i]);
   if(window.location.pathname != files[i]){
-
     navbar.appendChild(newitem);
   }
 }
