@@ -1,20 +1,10 @@
 var files = ["",""];
 var files_names = ["",""];
 
-function loadFile(filePath) {
-  var result = null;
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filePath, false);
-  xmlhttp.send();
-  if (xmlhttp.status==200) {
-      result = xmlhttp.responseText;
-  }
-  return result;
-}
 function GetFiles(){
   var path = window.location.pathname;
   var root_path = path.substring(0,path.lastIndexOf('headassbtw/')+10);
-  var fil = "Home;/index.html\nProjects;/Projects/index.html\nFAQ;/FAQ/index.html";
+  var fil = "Home;/\nProjects;/Projects/\nFAQ;/FAQ/";
   var lines = fil.split('\n');
   for(let i = 0; i < lines.length; i++){
       files_names[i] = lines[i].split(';')[0];
