@@ -136,3 +136,9 @@ a:hover{
 span{
     content: attr(data-title);
 }
+
+.redacted{
+    background-color: black;
+    border: 2px solid black;
+    color: red;
+}

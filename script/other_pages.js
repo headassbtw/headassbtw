@@ -20,11 +20,14 @@ var navbar = document.getElementsByClassName("nav-h2")[0];
 console.log(navbar);
 for(let i = 0; i < files.length; i++){
   var newitem = document.createElement('a');
-  newitem.href = files[i];
-  newitem.innerHTML = files_names[i] + " ";
-  console.log(window.location.pathname);
-  console.log(files[i]);
+    var divider = document.createElement('span');
+    divider.innerHTML = "// ";
+    divider.style = "user-select: none;";
+    newitem.href = files[i];
+    newitem.innerHTML = files_names[i] + " ";
   if(window.location.pathname != files[i]){
+    
+    navbar.appendChild(divider);
     navbar.appendChild(newitem);
   }
 }
