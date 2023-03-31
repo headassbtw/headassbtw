@@ -37,19 +37,29 @@ body {
     text-align: left;
     padding-bottom: 10px;
     padding-left: 100px;
+    overflow: hidden;
 }
 .main_page_header > h1{
     margin: 0px;
+    margin-top: -30px;
+    margin-left: -120px;
+    margin-bottom: -30px;
     font-size: 1350%;
     filter: url(#header_distort);
     opacity: 20%;
+    text-overflow: clip;
+    white-space: nowrap;
+    /*position: fixed;*/
     user-select: none;
 }
 .main_page_header > h2{
     margin: 0px;
-    margin-top: -70px;
+    /*margin-top: -70px;
     margin-bottom: 70px;
-    margin-left: 100px;
+    margin-left: 100px;*/
+    position: absolute;
+    top: 70px;
+    /*position: fixed;*/
     filter: url(#subheader_distort);
 }
 
@@ -136,9 +146,9 @@ a:hover{
 span{
     content: attr(data-title);
 }
-
-.redacted{
+.redacted:after{
     background-color: black;
     border: 2px solid black;
     color: red;
+    content: "[REDACTED]" !important;
 }
