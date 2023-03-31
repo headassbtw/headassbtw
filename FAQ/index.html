@@ -1,52 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style_main.css">
-    <svg width="-10" height="-10">
-      <filter id="header_distort">
-        <feColorMatrix type="matrix" 
-          result="red_"             
-          values="1 0 0 0 0
-                  0 0 0 0 0 
-                  0 0 0 0 0 
-                  0 0 0 1 0"/>
-        <feOffset in="red_" dx="2" dy="0" result="red"/>
-        <feColorMatrix type="matrix" 
-          in="SourceGraphic"             
-          result="blue_"             
-          values="0 0 0 0 0
-                  0 3 0 0 0 
-                  0 0 10 0 0 
-                  0 0 0 1 0"/>
-        <feOffset in="blue_" dx="-1" dy="0" result="blue"/>    
-        <feBlend mode="screen" in="red" in2="blue"/>
-      </filter>
-      <filter id="subheader_distort">
-        <feColorMatrix type="matrix" 
-          result="red_"             
-          values="1 0 0 0 0
-                  0 0 0 0 0 
-                  0 0 0 0 0 
-                  0 0 0 1 0"/>
-        <feOffset in="red_" dx="1" dy="0" result="red"/>
-        <feColorMatrix type="matrix" 
-          in="SourceGraphic"             
-          result="blue_"             
-          values="0 0 0 0 0
-                  0 3 0 0 0 
-                  0 0 10 0 0 
-                  0 0 0 1 0"/>
-        <feOffset in="blue_" dx="-1" dy="0" result="blue"/>    
-        <feBlend mode="screen" in="red" in2="blue"/>
-      </filter>
-    </svg>
+<meta name="darkreader" content="NO-DARKREADER-PLUGIN" />
+    <link rel="stylesheet" href="../style/style_main.css">
   </head>
   <body>
     <div class="main_page_header">
       <h1>
         FAQ
       </h1>
-      <h2>
+      <h2 class="nav-h2">
         (frequently asked question <span class="smol">(singular)</span>)
       </h2>
     </div>
@@ -70,6 +33,6 @@
         2009
       </div>
     </div>
-
+    <script src="script/other_pages.js"></script>
   </body>
 </html>

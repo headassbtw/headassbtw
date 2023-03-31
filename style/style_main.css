@@ -1,12 +1,15 @@
 @font-face {
     font-family: arame_thin;
-    src: url(Arame-Thin.ttf);
+    src: url(../Fonts/Arame-Thin.ttf);
 }
 @font-face {
     font-family: arame_regular;
-    src: url(Arame-Regular.ttf);
+    src: url(../Fonts/Arame-Regular.ttf);
 }
 
+h1{
+    font-family: arame_regular;
+}
 
 html{
     height: 100%;
@@ -38,7 +41,7 @@ body {
 .main_page_header > h1{
     margin: 0px;
     font-size: 1350%;
-    filter: url(#header_distort);
+    filter: url(chromatic_aberration.svg#header_distort);
     opacity: 20%;
     user-select: none;
 }
@@ -47,7 +50,7 @@ body {
     margin-top: -70px;
     margin-bottom: 70px;
     margin-left: 100px;
-    filter: url(#subheader_distort);
+    filter: url(chromatic_aberration.svg#subheader_distort);
 }
 .content_block_header_funnyline{
     width: 10px;

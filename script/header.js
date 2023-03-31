@@ -1,29 +1,3 @@
-
-var files = ["",""];
-var files_names = ["",""];
-
-function loadFile(filePath) {
-    var result = null;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", filePath, false);
-    xmlhttp.send();
-    if (xmlhttp.status==200) {
-        result = xmlhttp.responseText;
-    }
-    return result;
-}
-
-function GetFiles(){
-    var path = "https://headassbtw.github.io/headassbtw/pages.txt";
-    var fil = loadFile(path);
-    var lines = fil.split('\n');
-    for(let i = 0; i < lines.length; i++){
-        files_names[i] = lines[i].split(';')[0];
-        files[i] = lines[i].split(';')[1];
-    }
-}
-GetFiles();
-
 var gradient = ["black","white","white","black","black"]
 
 function sidebar_on() {
@@ -132,28 +106,18 @@ addSideMenu();
 function sidebar_loadPages(){
     var sidebar_div = document.getElementsByClassName("overlay")[0].getElementsByClassName("overlay-element")[0];
     var navbar = document.getElementsByClassName("nav-menu")[0];
-    var path = window.location.pathname.split('/');
-    var shortpath = path[path.length - 2] + '/' + path[path.length-1];
-    if(path[path.length-1] == "index.html"){
-        files[0] = "index.html";
-        for(let l = 1; l < files.length;l++){
-            files[l] = "pages/" + files[l];
-        }
-    }
-    console.log(shortpath);
+    console.log(files);
     var wi = 0;
     for(let i = 0; i < files.length; i++){
-        if(files[i] != path){
-            sidebar_div.appendChild(sidebar_pagediv(files[i], files_names[i]));
-            wi += textWidth(files_names[i]) + (40 * (itemsFrac/100));
-            var cw = navbar.clientWidth * (((itemsFrac * (i+1))/100));
+        //sidebar_div.appendChild(sidebar_pagediv(files[i], files_names[i]));
+        wi += textWidth(files_names[i]) + (40 * (itemsFrac/100));
+        var cw = navbar.clientWidth * (((itemsFrac * (i+1))/100));
 
-            if(wi > cw){
-                console.log("element overflowing! (combined text width of "+ wi +" vs box width of "+ cw +")");
-            }
-            else{
-                navbar.appendChild(navbar_pagecontainer(files[i], files_names[i]));
-            }
+        if(wi > cw){
+            console.log("element overflowing! (combined text width of "+ wi +" vs box width of "+ cw +")");
+        }
+        else{
+            navbar.appendChild(navbar_pagecontainer(files[i], files_names[i]));
         }
     }
 }
