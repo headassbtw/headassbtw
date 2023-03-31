@@ -41,7 +41,7 @@ body {
 .main_page_header > h1{
     margin: 0px;
     font-size: 1350%;
-    filter: url(chromatic_aberration.svg#header_distort);
+    filter: url(#header_distort);
     opacity: 20%;
     user-select: none;
 }
@@ -50,7 +50,7 @@ body {
     margin-top: -70px;
     margin-bottom: 70px;
     margin-left: 100px;
-    filter: url(chromatic_aberration.svg#subheader_distort);
+    filter: url(#subheader_distort);
 }
 .content_block_header_funnyline{
     width: 10px;
@@ -66,9 +66,11 @@ a{
     color:orange;
     transition: 250ms;
     text-decoration: none;
+    filter: url(#subheader_distort);
 }
 a:hover{
     color:red;
+    filter: none;
 }
 
 .content_block{

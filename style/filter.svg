@@ -1,0 +1,16 @@
+<svg
+  <filter id="header_distort">
+    <feColorMatrix type="matrix" result="red_" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" id="feColorMatrix2" />
+    <feOffset in="red_" dx="2" dy="0" result="red" id="feOffset4" />
+    <feColorMatrix type="matrix" in="SourceGraphic" result="blue_" values="0 0 0 0 0 0 3 0 0 0 0 0 10 0 0 0 0 0 1 0" id="feColorMatrix6" />
+    <feOffset in="blue_" dx="-1" dy="0" result="blue" id="feOffset8" />
+    <feBlend mode="screen" in="red" in2="blue" id="feBlend10" />
+  </filter>
+  <filter id="subheader_distort">
+    <feColorMatrix type="matrix" result="red_" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" id="feColorMatrix13" />
+    <feOffset in="red_" dx="1" dy="0" result="red" id="feOffset15" />
+    <feColorMatrix type="matrix" in="SourceGraphic" result="blue_" values="0 0 0 0 0 0 3 0 0 0 0 0 10 0 0 0 0 0 1 0" id="feColorMatrix17" />
+    <feOffset in="blue_" dx="-1" dy="0" result="blue" id="feOffset19" />
+    <feBlend mode="screen" in="red" in2="blue" id="feBlend21" />
+  </filter>
+</svg>
