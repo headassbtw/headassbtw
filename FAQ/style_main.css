@@ -1,0 +1,132 @@
+@font-face {
+    font-family: arame_thin;
+    src: url(Arame-Thin.ttf);
+}
+@font-face {
+    font-family: arame_regular;
+    src: url(Arame-Regular.ttf);
+}
+
+
+html{
+    height: 100%;
+    
+}
+body {
+    height: 100%;
+    background: repeating-linear-gradient(
+      -45deg,
+      #0A0A0A,
+      #0A0A0A 5px,
+      #000000 5px,
+      #000000 10px
+    );
+    color: white;
+    margin: 0px;
+}
+
+.main_page_header{
+    font-family: arame_thin;
+    color: white;
+    width: 100%;
+    border-bottom: 5px solid white;
+    background-color: black;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 100px;
+}
+.main_page_header > h1{
+    margin: 0px;
+    font-size: 1350%;
+    filter: url(#header_distort);
+    opacity: 20%;
+    user-select: none;
+}
+.main_page_header > h2{
+    margin: 0px;
+    margin-top: -70px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    filter: url(#subheader_distort);
+}
+.content_block_header_funnyline{
+    width: 10px;
+    background-color: red;
+    height: 10px;
+}
+
+.smol{
+    font-size: 70%;
+}
+
+a{
+    color:orange;
+    transition: 250ms;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+
+.content_block{
+
+    background-color: #ffffff;
+    margin: 0px;
+    margin-left: 100px;
+    width: 50em;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+}
+.content_block_header{
+    flex: auto;
+    flex-direction: row;
+    
+    
+    padding: 5px;
+    background-color: #000000d0;
+    text-align: left;
+    font-family: arame_thin;
+}
+.content_block_header::before{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    content: attr(content_block_header);
+}
+.content_block_header .cbh_main_text{
+    padding: 0px;
+    margin: auto;
+    line-height: 30px;
+    font-size:30px;
+    filter: url(#subheader_distort);
+    padding-bottom: 10px;
+}
+.content_block_content{
+    background-color: #404040 ;
+    font-family: arame_regular;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: center;
+    
+    padding: 10px;
+}
+
+.funny-clear{
+    filter: opacity(5%);
+    user-select: none;
+}
+
+.codeblock{
+    background-color: #000000a0;
+    padding:2px;
+    vertical-align: center;
+    border: 1px solid #ffffff50;
+    border-radius: 1px;   
+}
+
+span{
+    content: attr(data-title);
+}

@@ -2,9 +2,74 @@
 <html>
   <head>
     <link rel="stylesheet" href="style_main.css">
+    <svg width="-10" height="-10">
+      <filter id="header_distort">
+        <feColorMatrix type="matrix" 
+          result="red_"             
+          values="1 0 0 0 0
+                  0 0 0 0 0 
+                  0 0 0 0 0 
+                  0 0 0 1 0"/>
+        <feOffset in="red_" dx="2" dy="0" result="red"/>
+        <feColorMatrix type="matrix" 
+          in="SourceGraphic"             
+          result="blue_"             
+          values="0 0 0 0 0
+                  0 3 0 0 0 
+                  0 0 10 0 0 
+                  0 0 0 1 0"/>
+        <feOffset in="blue_" dx="-1" dy="0" result="blue"/>    
+        <feBlend mode="screen" in="red" in2="blue"/>
+      </filter>
+      <filter id="subheader_distort">
+        <feColorMatrix type="matrix" 
+          result="red_"             
+          values="1 0 0 0 0
+                  0 0 0 0 0 
+                  0 0 0 0 0 
+                  0 0 0 1 0"/>
+        <feOffset in="red_" dx="1" dy="0" result="red"/>
+        <feColorMatrix type="matrix" 
+          in="SourceGraphic"             
+          result="blue_"             
+          values="0 0 0 0 0
+                  0 3 0 0 0 
+                  0 0 10 0 0 
+                  0 0 0 1 0"/>
+        <feOffset in="blue_" dx="-1" dy="0" result="blue"/>    
+        <feBlend mode="screen" in="red" in2="blue"/>
+      </filter>
+    </svg>
   </head>
   <body>
-    test
+    <div class="main_page_header">
+      <h1>
+        FAQ
+      </h1>
+      <h2>
+        (frequently asked question <span class="smol">(singular)</span>)
+      </h2>
+    </div>
+    <div class="content_block">
+      <div class="content_block_header">
+        <span class="cbh_main_text">Steam Skin?</span>
+      </div>
+      <div class="content_block_content">
+        Metro for steam, with some CEF patches.</br>
+        The files out of my steam skins folder should be <a href="https://mega.nz/file/C9tBzRZY#ZcK08WbUXNZMd5U700mxTTwgDNWB1I_E745gIIpYSyQ">here.</a><br>
+        Create a folder in your steam install directory, named <span class="codeblock">skins</span> and then put the extracted theme in there.<br>
+        From there, you need to use the <a href="https://github.com/PhantomGamers/SFP/">CEF Patcher</a> for the library skin.<br>
+        If it doesn't work, frankly that's not my problem.
+      </div>
+    </div>
+    <div class="content_block funny-clear">
+      <div class="content_block_header">
+        <span class="cbh_main_text">When did you last shower?</span>
+      </div>
+      <div class="content_block_content">
+        2009
+      </div>
+    </div>
 
   </body>
 </html>
