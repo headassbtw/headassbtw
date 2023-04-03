@@ -23,7 +23,7 @@ for(let i = 0; i < files.length; i++){
     divider.style = "user-select: none;";
     newitem.href = files[i];
     newitem.innerHTML = files_names[i] + " ";
-  if(window.location.pathname != files[i]){
+  if(window.location != files[i]){
     
     navbar.appendChild(divider);
     navbar.appendChild(newitem);
