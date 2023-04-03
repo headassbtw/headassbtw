@@ -3,7 +3,7 @@ var files_names = ["",""];
 
 
 var path = window.location.pathname;
-var root_path = "dipshit.tech";
+var root_path = "https://dipshit.tech";
 var fil = "Home;/\nProjects;/Projects/\nFAQ;/FAQ/";
 var lines = fil.split('\n');
 for(let i = 0; i < lines.length; i++){
@@ -29,3 +29,6 @@ for(let i = 0; i < files.length; i++){
     navbar.appendChild(newitem);
   }
 }
+
+console.log(files);
+console.log(files_names);
