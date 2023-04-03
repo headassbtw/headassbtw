@@ -1,18 +1,16 @@
 var files = ["",""];
 var files_names = ["",""];
 
-function GetFiles(){
-  var path = window.location.pathname;
-  var root_path = path.substring(0,path.lastIndexOf('headassbtw/')+10);
-  if(path.lastIndexOf('headassbtw/') < 0) path.substring(0,path.lastIndexOf('.tech/')+5);
-  var fil = "Home;/\nProjects;/Projects/\nFAQ;/FAQ/";
-  var lines = fil.split('\n');
-  for(let i = 0; i < lines.length; i++){
-      files_names[i] = lines[i].split(';')[0];
-      files[i] = root_path + lines[i].split(';')[1];
-  }
+
+var path = window.location.pathname;
+var root_path = path.substring(0,path.lastIndexOf('headassbtw/')+10);
+if(path.lastIndexOf('headassbtw/') < 0) path.substring(0,path.lastIndexOf('.tech')+4);
+var fil = "Home;/\nProjects;/Projects/\nFAQ;/FAQ/";
+var lines = fil.split('\n');
+for(let i = 0; i < lines.length; i++){
+    files_names[i] = lines[i].split(';')[0];
+    files[i] = root_path + lines[i].split(';')[1];
 }
-GetFiles();
 
 console.log(files);
 console.log(files_names);
