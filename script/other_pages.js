@@ -3,8 +3,7 @@ var files_names = ["",""];
 
 
 var path = window.location.pathname;
-var root_path = path.substring(0,path.lastIndexOf('headassbtw/')+10);
-if(path.lastIndexOf('headassbtw/') < 0) root_path =path.substring(0,path.lastIndexOf('.tech')+4);
+var root_path = "dipshit.tech";
 var fil = "Home;/\nProjects;/Projects/\nFAQ;/FAQ/";
 var lines = fil.split('\n');
 for(let i = 0; i < lines.length; i++){
