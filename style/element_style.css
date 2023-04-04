@@ -1,0 +1,31 @@
+a{
+  color:yellow;
+  transition: 250ms;
+  text-decoration: none;
+  filter: url(#subheader_distort);
+}
+a:hover{
+  color:red;
+  filter: none;
+}
+
+button{
+  font-size: 20px;
+  color:yellow;
+  font-family: arame_regular;
+  background-color: black;
+  padding: 4px;
+  border: 2px solid white;
+  transition: 250ms;
+  filter: url(#subheader_distort);
+  /*clip-path: polygon(4px 0, 100% 0, 100% 100%, 0 100%, 0 4px);*/
+}
+
+button:hover{
+  background-color: white;
+  color:black;
+}
+
+ul{
+  padding-inline: 20px;
+}

@@ -16,6 +16,7 @@ html{
     
 }
 body {
+    
     height: 100%;
     background: repeating-linear-gradient(
       -45deg,
@@ -80,17 +81,6 @@ body {
     font-size: 70%;
 }
 
-a{
-    color:orange;
-    transition: 250ms;
-    text-decoration: none;
-    filter: url(#subheader_distort);
-}
-a:hover{
-    color:red;
-    filter: none;
-}
-
 .content_block{
     background-color: #ffffff;
     margin: 0px;
@@ -104,13 +94,11 @@ a:hover{
 }
 
 .content_block{
-    margin-left: 0px;
     width: 100%;
 }
 
 @media screen and (min-width: calc(50em + 100px)){
     .content_block{
-        margin-left: 100px;
         width: 50em;
     }
 }
@@ -173,14 +161,17 @@ span{
 
 .content_header{
     font-family: arame_thin;
+    width: 790px;
     font-size: 25px;
     line-height: 30px;
     background-color: black;
     display: flex;
-    width: 600px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
-    border: 4px solid white;
-    border-left: none;
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+    border: 10px solid white;
+    /*border-left: none;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .content_header h1{
@@ -189,14 +180,23 @@ span{
     filter: url(#subheader_distort);
 }
 
-.content_header:before{
-    content: "";
-    position:relative;
-    top: 0;
-    left: 0;
-    width: 600px;
-    margin-right: -600px;
-    background-color: white;
-    clip-path: polygon(592px 100%, 100% 100%, 100% 60px);
+
+.content_column{
+    margin-left: 0px;
+}
+@media screen and (min-width: calc(50em + 100px)){
+    .content_column{
+        margin-left: 100px;
+    }
 }
 
+.flex_split_if_wide{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: calc(100em + 300px)){
+    .flex_split_if_wide{
+        flex-direction: row;
+    }
+}
