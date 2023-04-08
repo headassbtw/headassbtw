@@ -43,7 +43,26 @@
           </div>
           <div class="content_block_content">
             The primary platform is PC, specifically linux but enough attention will be given to the Windows build. <br>
-            If i can get the homebrew toolkits working, I plan to support the Nintendo Switch, and <i>maybe</i> Xbox One; 3DS as well if I feel like it.
+            If i can get the homebrew toolkits working, I plan to support the Nintendo Switch, and <i>maybe</i> Xbox One; 3DS as well if I feel like it.<br><br>
+            APIS:
+            <ul>
+              <li>OpenGL</li>
+              <li>D3D11 / DXVK-Native</li>
+              <li>Vulkan (eventually)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content_block">
+          <div class="content_block_header">
+            <span class="cbh_main_text">Main barriers</span>
+          </div>
+          <div class="content_block_content">
+            Time.<br>
+            But aside from that, finding ways to abstract things across both OpenGL and D3D11 is difficult, because they do things differently.
+            D3D11 is of course lower-level, but it's also fundamentally different in how it works.
+            Specifically, the way it handles vertex buffers/arrays is a pain in my ass and I wish it worked like how it does in OpenGL.
+            <br>
+            I'm not even sure why I'm supporting D3D11, other than a gateway to lower-level APIs, since I'm most familiar with OpenGL.
           </div>
         </div>
       </div>
