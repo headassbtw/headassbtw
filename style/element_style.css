@@ -44,11 +44,13 @@ ul{
   border: 1px solid white;
 }
 .custom-table td{
+  width: 25%;
   padding: 5px;
   text-align: center;
   background-color: #00000020;
 }
 .custom-table .table_feature_impl{
+  
   background-color: white;
   color: black;
 }
