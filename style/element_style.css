@@ -1,3 +1,11 @@
+@keyframes rainbow-bg{
+  0%   {background-color: #FF0000}
+  25%  {background-color: #80FF00}
+  50%  {background-color: #00FFFF}
+  75%  {background-color: #8000FF}
+  100% {background-color: #FF0000}
+}
+
 a{
   color:yellow;
   transition: 250ms;
@@ -30,4 +38,45 @@ ul{
   margin-top: 10px;
   margin-bottom: 10px;
   padding-inline: 20px;
+}
+.custom-table{
+  width: 100%;
+  border: 1px solid white;
+}
+.custom-table td{
+  padding: 5px;
+  text-align: center;
+  background-color: #00000020;
+}
+.custom-table .table_feature_impl{
+  background-color: white;
+  color: black;
+}
+.custom-table .table_feature_impl::before{
+  content: "Implemented";
+}
+.custom-table .table_feature_none{
+  background-color: black;
+}
+.custom-table .table_feature_none::before{
+  content: "no";
+}
+.custom-table .table_feature_partial{
+  background-color: gray;
+}
+.custom-table .table_feature_partial::before{
+  content: "partial";
+}
+.custom-table .table_feature_refactor{
+  background-color: red;
+}
+.custom-table .table_feature_refactor::before{
+  content: "refactoring";
+}
+.custom-table .table_feature_joke{
+  animation: rainbow-bg 2.5s linear;
+  animation-iteration-count: infinite;
+}
+.custom-table .table_feature_joke::before{
+  content: "lol no";
 }
