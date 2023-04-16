@@ -34,8 +34,10 @@
             <span class="cbh_main_text">Structure</span>
           </div>
           <div class="content_block_content">
-            <i>WAY</i> less object-oriented than something like Unity or Unreal. <br>
-            I intend, if I possibly can, to never have a GameObject-esque class.
+            <i>WAY</i> less GameObject/Actor-centric than something like Unity or Unreal. <br>
+            I'm not a fan of how a lot of these engines plan scenes out with isolated objects,
+            I like being able to control and trace where the logic and flow of things go.
+            At that point I'm going to end up with one big megascript, so why not forego GameObjects and Actors, and just roll with the MegaScript?
           </div>
         </div>
         <div class="content_block">
@@ -62,9 +64,9 @@
               <thead>
                 <tr style="background-color: #FFFFFF50;">
                   <td>Feature</td>
-                  <td style="color: blue;">OpenGL</td>
-                  <td style="color: green;">D3D11</td>
-                  <td style="color: red;">Vulkan</td>
+                  <td style="background-color: blue;">OpenGL</td>
+                  <td style="background-color: green;">D3D11</td>
+                  <td style="background-color: red;">Vulkan</td>
                 </tr>
               </thead>
               <tbody>
@@ -83,6 +85,12 @@
                 <tr>
                   <td>Shaders</td>
                   <td class="table_feature_impl"></td>
+                  <td class="table_feature_partial"></td>
+                  <td class="table_feature_partial"></td>
+                </tr>
+                <tr>
+                  <td>Shader uniform buffers</td>
+                  <td class="table_feature_workingon"></td>
                   <td class="table_feature_partial"></td>
                   <td class="table_feature_partial"></td>
                 </tr>
