@@ -194,6 +194,20 @@ span{
 }
 
 
+.nav-h2 a{
+    line-height: 100%;
+}
+
+.nav-h2 a:hover{
+  font-size:calc(100% + 20px);
+  line-height: calc(100% - 40px);
+}
+
+.nav-h2 a:last-child{
+    padding-right: 100px;
+}
+
+
 .content_column{
     margin-left: 0px;
 }
