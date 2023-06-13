@@ -14,18 +14,13 @@ for(let i = 0; i < lines.length; i++){
 console.log(files);
 console.log(files_names);
 
-var navbar = document.getElementsByClassName("nav-h2")[0];
+var navbar = document.getElementsByClassName("mph-links-1")[0];
 console.log(navbar);
 for(let i = 0; i < files.length; i++){
   var newitem = document.createElement('a');
-    var divider = document.createElement('span');
-    divider.innerHTML = "// ";
-    divider.style = "user-select: none;";
-    newitem.href = files[i];
-    newitem.innerHTML = files_names[i] + " ";
+  newitem.href = files[i];
+  newitem.innerHTML = files_names[i];
   if(window.location != files[i]){
-    
-    navbar.appendChild(divider);
     navbar.appendChild(newitem);
   }
 }
