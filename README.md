@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I'm headass, an intermediate C++ and C# dev, and a student.
+I'm headass, an intermediate software developer, primarily in C++ and C#, dabbling in rust.
 
 Fuck python.
 
