@@ -212,7 +212,9 @@ body {
     
     padding: 10px;
 }
-
+.project_cancelled{
+    background-color: #421919;
+}
 
 .funny-clear{
     filter: opacity(5%);
