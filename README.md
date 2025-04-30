@@ -2,9 +2,7 @@
 
 I'm headass, an intermediate software developer, primarily in C++ and Rust, recovering from C#.
 
-I make things I want or am paid to want, and live-tweet a lot of it.
-
-Fuck python.
+I make a variety of things, usually in or around gaming.
 
 [![Headass's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=headassbtw&layout=compact&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
 
