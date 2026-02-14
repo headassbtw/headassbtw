@@ -1,11 +1,10 @@
 ### Hi there 👋
 
-I'm headass, an intermediate software developer, primarily in C++ and Rust, recovering from C#.
+I'm headass, a tech artist in virtual production, with a passion for lower-level graphics/engine tech and reverse engineering on the side.
 
 I make a variety of things, usually in or around gaming.
 
 [![Headass's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=headassbtw&layout=compact&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
-
 
 Some of my better works:
 - [Feztris, C++](https://headassbtw.itch.io/feztris) - An orthographic 3D tetris
